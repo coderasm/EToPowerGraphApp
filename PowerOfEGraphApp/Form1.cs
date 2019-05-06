@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PowerOfEGraphApp
@@ -15,6 +8,20 @@ namespace PowerOfEGraphApp
     public Form1()
     {
       InitializeComponent();
+
+    }
+
+    private void onLoad(object sender, EventArgs e)
+    {
+      fillChart();
+    }
+
+    private void fillChart()
+    {
+      for (double i = 4; i <= 5; i+=.1)
+      {
+        chart.Series[0].Points.AddXY(i, Math.Pow(Math.E, i));
+      }
     }
   }
 }
