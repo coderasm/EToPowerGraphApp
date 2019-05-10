@@ -1,0 +1,7 @@
+Use windows forms built in chart control.
+Programatically build the series of points to feed
+the chart control. Programatically set the maximum
+and minimum values of the x-axis. Programatically
+set the step of the x-axis. Programatically set
+the color of the plotted points. Add menus to change
+the series color and the intervals along with step.
